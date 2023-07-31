@@ -1,5 +1,6 @@
 #include <iostream>
 #include <VX/vx.h>
+
 int main()
 {
 // 创建capture节点，获取图像

@@ -10,13 +10,13 @@ int main()
     vx_image output = vxCreateImage(context, 640, 480, VX_DF_IMAGE_U8);
     vx_graph graph = vxCreateGraph(context);
     vx_image intermediate = vxCreateVirtualImage(graph, 640, 480, VX_DF_IMAGE_U8);
-    vx_node F1 = vxF1Node(graph, input, intermediate);
-    vx_node F2 = vxF2Node(graph, intermediate, output);
+    // vx_node F1 = vxF1Node(graph, input, intermediate);
+    // vx_node F2 = vxF2Node(graph, intermediate, output);
 
     /* verify graph */
     if (vxVerifyGraph(graph) == VX_SUCCESS)
     {
-        while (/* ... condition for loop ... */)
+        while (true)
         {
             // ... write to input image ...
 
@@ -28,8 +28,8 @@ int main()
     }
 
     /* release resources */
-    vxReleaseNode(&F2);
-    vxReleaseNode(&F1);
+    // vxReleaseNode(&F2);
+    // vxReleaseNode(&F1);
     vxReleaseImage(&intermediate);
     vxReleaseGraph(&graph);
     vxReleaseImage(&output);
