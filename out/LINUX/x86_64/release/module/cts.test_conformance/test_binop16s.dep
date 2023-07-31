@@ -1,0 +1,12 @@
+/home/holo/Downloads/openvx_second/OpenVX-sample-impl/out/LINUX/x86_64/release/module/cts.test_conformance/test_binop16s.o: \
+ /home/holo/Downloads/openvx_second/OpenVX-sample-impl/cts/test_conformance/test_binop16s.c \
+ /home/holo/Downloads/openvx_second/OpenVX-sample-impl/cts/test_engine/test.h \
+ /home/holo/Downloads/openvx_second/OpenVX-sample-impl/cts/test_engine/test_utils.h \
+ /home/holo/Downloads/openvx_second/OpenVX-sample-impl/api-docs/include/VX/vx.h \
+ /home/holo/Downloads/openvx_second/OpenVX-sample-impl/api-docs/include/VX/vx_vendors.h \
+ /home/holo/Downloads/openvx_second/OpenVX-sample-impl/api-docs/include/VX/vx_types.h \
+ /home/holo/Downloads/openvx_second/OpenVX-sample-impl/api-docs/include/VX/vx_kernels.h \
+ /home/holo/Downloads/openvx_second/OpenVX-sample-impl/api-docs/include/VX/vx_api.h \
+ /home/holo/Downloads/openvx_second/OpenVX-sample-impl/api-docs/include/VX/vx_nodes.h \
+ /home/holo/Downloads/openvx_second/OpenVX-sample-impl/cts/test_engine/test_image.h \
+ /home/holo/Downloads/openvx_second/OpenVX-sample-impl/api-docs/include/VX/vxu.h
