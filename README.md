@@ -378,3 +378,9 @@ Although Khronos is not actively maintaining a public project of this sample imp
 If any bugs are found in the sample implementation, you can notify the Khronos working group via 
 * File an [issue on the GitHub](https://github.com/KhronosGroup/OpenVX-sample-impl/issues)
 * The OpenVX feedback forum: https://community.khronos.org/c/openvx
+
+##
+20230731 user add build ok, test ok
+build out install/Linux/x64/Debug
+add test case
+
