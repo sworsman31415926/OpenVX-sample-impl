@@ -1,7 +1,8 @@
 #include <iostream>
 #include <VX/vx.h>
 
-void print_image(vx_image image, const char *message) {
+void print_image(vx_image image, const char *message) 
+{
     vx_status status;
 
     std::cout << "===============================" << std::endl;
@@ -32,12 +33,17 @@ void print_image(vx_image image, const char *message) {
     vx_pixel_value_t uniform_value;
     status = vxQueryImage(image, VX_IMAGE_IS_UNIFORM, &is_uniform, sizeof(is_uniform));
     if (status != VX_SUCCESS)
+    {
         is_uniform = false, uniform_value.S32 = -32768;
+    }
 
-    if (is_uniform == vx_true_e) {
+    if (is_uniform == vx_true_e) 
+    {
         status = vxQueryImage(image, VX_IMAGE_UNIFORM_VALUE, &uniform_value, sizeof(uniform_value));
         if (status != VX_SUCCESS)
+        {
             uniform_value.S32 = -32768;
+        }
     }
 
     std::cout << "\t" << "format        : " << format << std::endl;
@@ -49,7 +55,10 @@ void print_image(vx_image image, const char *message) {
     std::cout << "\t" << "memory_type   : " << memory_type << std::endl;
     std::cout << "\t" << "is_uniform    : " << is_uniform << std::endl;
     if (is_uniform)
+    {
         std::cout << "\t" << "uniform_value : " << uniform_value.S32 << std::endl;
+    }
+
 
     std::cout << "\t" << "valid region  : " << std::endl;
     vx_rectangle_t patch;
@@ -60,7 +69,8 @@ void print_image(vx_image image, const char *message) {
     std::cout << "\t" << "\t" << "end_y     : " << patch.end_y << std::endl;
 
     std::cout << "\t" << "image patch addressing   : " << std::endl;
-    for (size_t i = 0; i < planes; i++) {
+    for (size_t i = 0; i < planes; i++) 
+    {
         vx_imagepatch_addressing_t addr = VX_IMAGEPATCH_ADDR_INIT;
 
         vx_map_id map_id;
